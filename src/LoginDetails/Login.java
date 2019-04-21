@@ -78,8 +78,12 @@ public class Login {
 		JButton btnLogin = new JButton("Login");
 		btnLogin.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				if(usernametxt.getText()=="srinkhala" && passwordtxt.getPassword().equals("tada")) {
-					
+				System.out.println(usernametxt.getText());
+				System.out.println(passwordtxt.getPassword());
+				String usr_name = usernametxt.getText();
+				String pwd = new String(passwordtxt.getPassword());
+				if(usr_name.equals("srinkhala") && pwd.equals("tada")) {
+					System.out.println("Sahii");
 				}
 				else {
 					final JPanel panel = new JPanel();
